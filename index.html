@@ -64,6 +64,7 @@
     <script>
         const correctUsername = "admin";  // Belirlediğiniz kullanıcı adı
         const correctPassword = "password123";  // Belirlediğiniz şifre
+        const redirectURL = "https://www.basariuzem.com/canl%C4%B1-ders";  // Yönlendirmek istediğiniz URL
 
         document.getElementById("loginForm").addEventListener("submit", function(event) {
             event.preventDefault();
@@ -71,7 +72,7 @@
             const password = document.getElementById("password").value;
 
             if (username === correctUsername && password === correctPassword) {
-                window.location.href = "https://www.your-redirect-url.com";  // Yönlendirmek istediğiniz URL
+                window.location.href = redirectURL;  // Yönlendirmek istediğiniz URL
             } else {
                 alert("Kullanıcı adı veya şifre yanlış.");
             }
